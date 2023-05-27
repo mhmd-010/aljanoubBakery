@@ -1,0 +1,160 @@
+/* General Styles */
+@import url('home.css');
+@import url('menu.css');
+@import url('contact.css');
+@import url('about.css');
+
+@font-face {
+  font-family: bakery;
+  src: url('fonts/Bakery-eZXRO.ttf');
+}
+
+@font-face {
+  font-family: mont;
+  src: url('fonts/MontserratRegular-BWBEl.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+  font-family: mont;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: rgb(214, 197, 191) !important;
+}
+
+
+
+
+
+main {
+  padding: 20px;
+}
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 35%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+form button[type="submit"] {
+  background-color: #ffa07a;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #ff7f50;
+}
+
+@media screen and (max-width : 570px) {
+
+  #menu-header {
+    height: 150px;
+  }
+
+  .carousel-item img {
+    height: 50vh;
+  }
+
+  .logo {
+    width: 150%;
+    margin-right: 0 !important;
+  }
+
+  .logo h1 {
+    font-size: 15px !important;
+    padding-top: 7px;
+  }
+
+  .nav-bar li {
+    font-size: 12px !important;
+    padding: 2px;
+  }
+
+  .nav-bar img {
+    width: 20px;
+    height: 20px;
+    margin-top: 0px;
+  }
+
+  .nav-bar ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    float: left !important;
+
+  }
+
+  .nav-bar {
+    width: 70%;
+    margin-top: -10px;
+    margin-left: 0 !important;
+
+  }
+
+  .logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 100%;
+  }
+
+  .welcome {
+    height: 50vh;
+    font-size: 10px !important;
+    padding-top: 70px;
+
+  }
+
+  .welcome button {
+    width: 100px;
+    height: 30px;
+    padding: 1px;
+
+  }
+
+  .welcome p {
+    width: 60%;
+  }
+
+
+  .footer-basic {
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>AL janoub Bakery</title>
+  <link rel="stylesheet" href="index.css">
+
+</head>
+
+<body>
+
+  <header id="menu-header">
+    <div class="logo">
+      <img src="images/logo.jpg" alt="">
+      <h1>Al Janoub Bakery</h1>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <img onclick="goToCart()" width="30px" height="30px" src="images/cart.png" alt="">
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <div class="cakes">
+    <h1>
+      Cakes
+    </h1>
+  </div>
+
+
+  <div class="container-fluid">
+    <div class="card" style="width: 15rem;">
+      <img src="images/3layercake.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Three Layers Cake</h5>
+        <p class="card-text">chocolate, vanilla, and strawberry cake</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Price: $10</li>
+        <li class="list-group-item">Quantity: <input type="number" min="1" max="5" id="quantity1"></li>
+      </ul>
+      <button class="order-btn"
+        onclick="addToCart('images/3layercake.jpg', 'Three Layers Cake', 'chocolate, vanilla, and strawberry cake', 10, 'quantity1')">Order</button>
+    </div>
+
+    <div class="card" style="width: 15rem;">
+      <img src="images/chocolatecherry.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Chocolate Cherry Cake</h5>
+        <p class="card-text">chocolate cake with cherries and gold toppings</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Price: $25</li>
+        <li class="list-group-item">Quantity: <input type="number" min="1" max="5" id="quantity2"></li>
+      </ul>
+      <button class="order-btn"
+        onclick="addToCart('images/chocolatecherry.jpg' ,'Chocolate Cherry Cake', 'chocolate cake with cherries and gold toppings', 25, 'quantity2')">Order</button>
+    </div>
+
+    <div class="card" style="width: 15rem;">
+      <img src="images/chocolatecream.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Chocolate Cream Cake</h5>
+        <p class="card-text">Chocolate cream cake, white and black strawberry cake</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Price : 20$</li>
+        <li class="list-group-item">
+          Quantity <input type="number" min='1' max="5" id="quantity3"> </li>
+      </ul>
+      <div class="order-btn">
+
+        <button class="order-btn"
+          onclick="addToCart('images/chocolatecream.jpg', 'Chocolate Cream Cake', 'Chocolate cream cake, white and black strawberry cake', 20, 'quantity3')">
+          Order</button>
+      </div>
+    </div>
+
+    <div class="card" style="width: 15rem;">
+      <img src="images/Vanilla cake.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Vanilla Cake</h5>
+        <p class="card-text"> sweat , rich cake with vanilla cream and strawberries </p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Price : 20$</li>
+        <li class="list-group-item">
+          Quantity <input type="number" min='1' max="5" id="quantity12"> </li>
+      </ul>
+      <div class="order-btn">
+
+        <button class="order-btn"
+          onclick="addToCart('images/chocolatecream.jpg', 'Vanilla Cake', ' sweat , rich cake with vanilla cream and strawberries', 20, 'quantity12')">Order</button>
+      </div>
+    </div>
+
+    <div class="card" style="width: 15rem;">
+      <img src="images/red velvet.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Red velvet Cake</h5>
+        <p class="card-text"> cocoa powder, butter, sugar, eggs, and flour as well as buttermilk, vinegar, and red food
+          coloring</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Price : 30$</li>
+        <li class="list-group-item">
+          Quantity <input type="number" min='1' max="5" id="quantity13"> </li>
+      </ul>
+      <div class="order-btn">
+
+        <button class="order-btn"
+          onclick="addToCart('images/red velvet.jpeg', 'Red velvet Cake', ' cocoa powder, butter, sugar, eggs, and flour as well as buttermilk, vinegar, and red food coloring', 30, 'quantity13')">Order</button>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="pizzas">
+    <h1>
+      Pizzas
+    </h1>
+  </div>
+
+  <div class="container-fluid">
+    <div class="card" style="width: 15rem;">
+      <img src="images/pepperonipizza.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Pepperoni Pizza</h5>
+        <p class="card-text">Thick crust, pepperoni , Parmesan cheese</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Price : 12$</li>
+        <li class="list-group-item">
+          Quantity <input type="number" min='1' max="5" id="quantity4"> </li>
+      </ul>
+      <button class="order-btn"
+        onclick="addToCart('images/pepperonipizza.jpg', 'Pepperoni Pizza' ,'Thick crust, pepperoni, Parmesan cheese', 12, 'quantity4')">Order</button>
+    </div>
+
+    <div class="card" style="width: 15rem;">
+      <img src="images/BBQ-Chicken-Pizza.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">BBQ Chicken Pizza</h5>
+        <p class="card-text">Thin crust, parmesan cheese , mozzerella cheese , bbq sauce , grilled chicken</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Price : 25$</li>
+        <li class="list-group-item">
+          Quantity <input type="number" min='1' max="5" id="quantity5"> </li>
+      </ul>
+      <button class="order-btn"
+        onclick="addToCart('images/BBQ-Chicken-Pizza.jpg', 'BBQ Chicken Pizza' ,'Thin crust, parmesan cheese , mozzerella cheese , bbq sauce , grilled chicken', 25, 'quantity5')">Order</button>
+    </div>
+
+    <div class="card" style="width: 15rem;">
+      <img src="images/download.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Vegtable pizza</h5>
+        <p class="card-text">Thin crust , olives ,mushrooms , onions , parmesan cheese</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Price : 20$</li>
+        <li class="list-group-item">
+          Quantity <input type="number" min='1' max="5" id="quantity6"> </li>
+      </ul>
+      <button class="order-btn"
+        onclick="addToCart('images/BBQ-Chicken-Pizza.jpg', 'Vegtable pizza' ,'Thin crust , olives ,mushrooms , onions , parmesan cheese', 20, 'quantity6')">Order</button>
+
+
+    </div>
+
+    <div class="card" style="width: 15rem;">
+      <img src="images/half-half half pizza .jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">half pepperoni half Vegtable Pizza</h5>
+        <p class="card-text">Thin crust , olives ,mushrooms , onions , parmesan cheese</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Price : 17$</li>
+        <li class="list-group-item">
+          Quantity <input type="number" min='1' max="5" id="quantity11"> </li>
+      </ul>
+      <button class="order-btn"
+        onclick="addToCart('images/half-half half pizza .jpg', 'half pepperoni half Vegtable Pizza' ,'Thin crust , olives ,mushrooms , onions , parmesan cheese , pepperoni', 17, 'quantity11')">Order</button>
+
+
+    </div>
+
+    <div class="card" style="width: 15rem;">
+      <img src="images/marg.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Margherita pizza</h5>
+        <p class="card-text">Thin crust , parmesan cheese , mozzerella cheese</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Price : 9$</li>
+        <li class="list-group-item">
+          Quantity <input type="number" min='1' max="5" id="quantity14"> </li>
+      </ul>
+      <button class="order-btn"
+        onclick="addToCart('images/marg.jpg', 'Margherita pizza' ,'Thin crust , parmesan cheese , mozzerella cheese', 9, 'quantity14')">Order</button>
+
+
+    </div>
+  </div>
+
+  <div class="breads">
+    <h1>
+      Breads
+    </h1>
+  </div>
+
+  <div class="container-fluid">
+    <div class="card" style="width: 15rem;">
+      <img src="images/baguette.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Baguette</h5>
+        <p class="card-text">mix of flour, water, and yeast</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Price : 5$</li>
+        <li class="list-group-item">
+          Quantity <input type="number" min='1' max="5" id="quantity7"> </li>
+      </ul>
+      <button class="order-btn"
+        onclick="addToCart('images/Baguette.jpg', 'Baguette pizza' ,'mix of flour, water, and yeast', 5, 'quantity7')">Order</button>
+    </div>
+
+    <div class="card" style="width: 15rem;">
+      <img src="images/white bread.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">White Bread</h5>
+        <p class="card-text">flour, water, salt, and yeast.</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Price : 3$</li>
+        <li class="list-group-item">
+          Quantity <input type="number" min='1' max="5" id="quantity8"> </li>
+      </ul>
+      <button class="order-btn"
+        onclick="addToCart('images/white bread.jpg', 'White Bread' ,'flour, water, salt, and yeast', 3, 'quantity8')">Order</button>
+    </div>
+
+    <div class="card" style="width: 15rem;">
+      <img src="images/challah bread.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Challah Bread</h5>
+        <p class="card-text">Wheat Flour, Water, Egg [Whole Egg], White Sugar, Sunflower Oil, Yeast, Salt</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Price : 4$</li>
+        <li class="list-group-item">
+          Quantity <input type="number" min='1' max="5" id="quantity9"> </li>
+      </ul>
+
+      <button class="order-btn"
+        onclick="addToCart('images/challah bread.jpg', 'Challah Bread' ,'Wheat Flour, Water, Egg [Whole Egg], White Sugar, Sunflower Oil, Yeast, Salt', 4, 'quantity9')">Order</button>
+
+    </div>
+
+    <div class="card" style="width: 15rem;">
+      <img src="images/Flaatbread.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Flatbread </h5>
+        <p class="card-text">flour, salt, and water and rolled flat</p>
+      </div>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">Price : 2$</li>
+        <li class="list-group-item">
+          Quantity <input type="number" min='1' max="5" id="quantity10"> </li>
+      </ul>
+
+      <button class="order-btn"
+        onclick="addToCart('images/Flaatbread.jpg', 'Flatbread ' ,'flour, salt, and water and rolled flat', 2, 'quantity10')">Order</button>
+
+    </div>
+  </div>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>
