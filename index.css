@@ -151,10 +151,5 @@ form button[type="submit"]:hover {
   }
 
 
-  .footer-basic {
-    position: absolute !important;
-    bottom: 0 !important;
-    width: 100%;
-  }
 
 }

@@ -2,3 +2,15 @@
     width: 50% !important;
 
 }
+
+.aboutfoot {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .aboutfoot {
+        position: relative;
+    }
+}

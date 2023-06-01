@@ -79,3 +79,15 @@ input[type="submit"]:hover {
   filter: brightness(100%);
   opacity: 1;
 }
+
+.contactfoot {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  .contactfoot {
+    position: relative;
+  }
+}
